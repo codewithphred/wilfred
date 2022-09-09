@@ -1,5 +1,5 @@
 *{
-    
+    margin: 0%;
 }
 
 
@@ -25,16 +25,11 @@ li a:hover {
 }
 .about {
     border-bottom: 100px;
-    /* margin-left: 30px; */
     letter-spacing:2px ;
     font-family: sans-serif;
     background-color: rgb(34, 31, 31);
-    /* width: fit-content; */
+    width: 100%;
  padding: 30px;
- border-bottom-left-radius: 20px;
- border-bottom-right-radius:30px;
- /* border-top-left-radius: 50px; */
- /* border-top-right-radius: 35px;  */
  margin-bottom: 30px;
 
 }
@@ -64,7 +59,7 @@ li a:hover {
     background-color: black;
     color: orange;
     padding: 12px;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in ease-out;
 }
 .resume {
     border-radius: 30px;
@@ -79,15 +74,15 @@ li a:hover {
     background-color:orange;
     color: black;
     padding: 18px;
-    transition: 0.5s ease-in-out;}
+    transition: 0.5s ease-in ease-out;}
     .grids {
         background-color: black;
-        /* width: fit-content; */
+        width: 100%;
         padding: 10px;
         margin-bottom: 30px;
         border-radius: 30px;
        text-align: center;
-        margin-left: 35px;
+        /* margin-left: 35px; */
     }
     .grids h3 {
         color: white;
