@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+    margin-right: 0%;
 }
 
 
@@ -47,6 +48,13 @@ li a:hover {
     margin-left: 50px;
     margin-bottom:60px;
     border-radius: 30%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 140px;
 }
 .hire{
     border-radius: 30px;
@@ -99,10 +107,9 @@ li a:hover {
     border-bottom: 45px;
     }
     .contact {
-        border-top-left-radius: 100px;
         border-top-right-radius: 30px;
         text-align: center;
-        background-color:rgba(0, 0, 0, 0.904);
+        background-color: black;
         
         }
         .contact h1 {
@@ -124,15 +131,16 @@ li a:hover {
             border-bottom: 1px solid orange;
         }
         input:focus {
-            outline: none;
+            outline: white;
             color: white;
+            
         }
         textarea {
             margin-top: 20px;
         }
         textarea:focus {
             outline: none;
-            color: white;
+            color:black;
         }
         .submit {
             margin-top: 15px;
