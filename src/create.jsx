@@ -19,7 +19,9 @@ function Create(props) {
   }
 
   function submitNote(event) {
+   if(note.content != ''){
     props.onAdd(note);
+   }
     setNote({
         content: ""
     })
