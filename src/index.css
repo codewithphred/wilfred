@@ -1,163 +1,90 @@
-*{
+* {
+    padding: 0%;
     margin: 0%;
-    margin-right: 0%;
+    box-sizing: border-box;
 }
-
-
-ul {
-    background-color: black;
-    border-bottom-left-radius: 25px;
-    list-style-type: none;
+html {
+    font-family: sans-serif;
+}
+body {
+    background: #eee;
+    padding: 0 16px;
+}
+header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     display: flex;
-    padding: 20px;
-}
-li {
-    text-decoration: none;
-    margin-left: 20px;
-}
-li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color:orange;
-}
-li a:hover {
-    border-bottom: solid 1px orange;
-    color: rgb(211, 145, 23);
-}
-.about {
-    border-bottom: 100px;
-    letter-spacing:2px ;
-    font-family: sans-serif;
-    background-color: rgb(34, 31, 31);
-    width: 100%;
- padding: 30px;
- margin-bottom: 30px;
-
-}
-.about h1 {
-    color: white;
-}
-.about h3 {
-    color: orange;
-}
-.about span {
-    color: white;
-    font-style: italic;
-}
-.allbtn {
-    margin-left: 50px;
-    margin-bottom:60px;
-    border-radius: 30%;
+    justify-content: space-between;
+    
 }
 
 img {
-    width: 250px;
-    height: 250px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-left: 50px;
-}
-.hire{
-    border-radius: 30px;
-    padding: 10px;
-    border-top: 30px;
-    background-color: orange;
-    border: white;
-}
-.hire:hover{
-    background-color: black;
-    color: orange;
-    padding: 12px;
-    transition: 0.5s ease-in ease-out;
-}
-.resume {
-    border-radius: 30px;
-    padding: 15px;
-    border-top: 30px;
-    background-color: black;
-    border: white;
-    margin-left: 15px;
-    color: white;
-}
-.resume:hover{
-    background-color:orange;
-    color: black;
-    padding: 18px;
-    transition: 0.5s ease-in ease-out;}
-    .grids {
-        background-color: black;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 30px;
-        border-radius: 30px;
-       text-align: center;
-        /* margin-left: 35px; */
-    }
-    .grids h3 {
-        color: white;
-        font-family: sans-serif;
-        text-align: center;
-    }
-    .grids h5 {
-        color: rgb(197, 143, 42);
-        border-bottom: 15px;
-    }
-    .grids span{
-        color: white;
-        font-family: sans-serif;
-    border-bottom: 45px;
-    }
-    .contact {
-        border-top-right-radius: 30px;
-        text-align: center;
-        background-color: black;
-        
-        }
-        .contact h1 {
-            color: orange;
-            font-family: sans-serif;
-        }
-        .contact h5 {
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-        }
-        label {
-            color: white;
-            font-family:sans-serif
-        }
-        input {
-            border: none;
-            background-color: transparent;
-            border-bottom: 1px solid orange;
-        }
-        input:focus {
-            outline: white;
-            color: white;
-            
-        }
-        textarea {
-            margin-top: 20px;
-        }
-        textarea:focus {
-            outline: none;
-            color:black;
-        }
-        .submit {
-            margin-top: 15px;
-            border-radius: 15px;
-    padding: 10px;
-    border-top: 30px;
-    background-color: orange;
-    border: white
-        }
-        .footer {
-            text-align: center;
-            background: black;
-            margin-top: 70px;
-        }
-        .footer h6 {
-            color: orange;
-            font-style: oblique;
-        }
-
     
+}
+header h1 {
+color: #fff; 
+font-family: sans-serif;
+font-weight: 190;   
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0%;
+    width: 100%;
+    height: 2.5rem;
+}
+footer p {
+    color: #ccc;
+}
+
+.note {
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 3px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+}
+.note h1 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+.note p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+textarea {
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 5px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    border: none;
+
+}
+.add-button {
+    color: #fff;
+    background-color: #f5ba13;
+    border-radius: 50%;
+    border: none;
+    padding: 6px;
+    margin-left: -50px;
+}
+.add-button:hover{
+    padding: 8px;
+}
+
+.delete-button {
+    color: #f5ba13;
+    background-color:#fff;
+    margin-left: 180px;
+    border: none;
+}
+

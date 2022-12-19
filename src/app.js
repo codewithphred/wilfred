@@ -1,19 +1,39 @@
-import React from "react";
-import img from "./images/img.jpg";
-import Nav from "./nav.jsx";
-import Home from "./home.jsx";
-import Button from "./button.jsx";
-import About from "./about.jsx";
-import Form from "./form.jsx";
+import React, { useState } from "react";
+import Header from "./components/header.jsx";
+import Note from "./components/note.jsx";
+import Footer from "./components/footer.jsx";
+import Create from "./create.jsx";
+
+
 function App() {
+
+const [notes, setNotes] = useState([]);
+
+
+   function addNote(newNote){
+setNotes(prevNotes => {
+   return [...prevNotes, newNote];});
+   }
+
+   function deleteNote (id) {
+setNotes(prevNotes => {
+
+   return prevNotes.filter((noteItem, index) => {
+      return index !== id;
+   })
+})
+   }
   return (
     <div>
-      <Nav />
-      <Home />
-      <Button />
-      <img src={img} alt="" />
-      <About />
-      <Form />
+      <Header />
+      <Create onAdd={addNote}/>
+      {notes.map((noteItem, index) => {
+         return <Note
+         key={index}
+         id= {index}
+          content={noteItem.content} onDelete={deleteNote} />
+      })}
+      <Footer />
     </div>
   );
 }
