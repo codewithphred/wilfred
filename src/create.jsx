@@ -19,13 +19,18 @@ function Create(props) {
   }
 
   function submitNote(event) {
-   if(note.content !== '' || note.content !== null){
-    props.onAdd(note); 
+    event.preventDefault();
+
+   if(!note.content){
+    return;
    }
+
+   props.onAdd(note); 
+
     setNote({
-        content: ""
-    })
-event.preventDefault();
+      content: ""
+     })
+    
   }
   return (
     <div>
